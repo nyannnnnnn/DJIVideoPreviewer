@@ -799,10 +799,10 @@ static VideoPreviewer* previewer = nil;
             double decodeStart = [self.smoothDecode getTick];
 
             //sync config
-            _glView.overExposedMark = _overExposedWarningThreshold;
+            _glView.overExposedMark = previewer.overExposedWarningThreshold;
             _glView.luminanceScale = _luminanceScale;
-            _glView.enableFocusWarning = _enableFocusWarning;
-            _glView.focusWarningThreshold = _focusWarningThreshold;
+            _glView.enableFocusWarning = previewer.enableFocusWarning;
+            _glView.focusWarningThreshold = previewer.focusWarningThreshold;
             _glView.dLogReverse = _dLogReverse;
             _glView.enableHSB = _enableHSB;
             _glView.hsbConfig = _hsbConfig;
